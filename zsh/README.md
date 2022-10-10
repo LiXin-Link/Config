@@ -46,6 +46,8 @@ source ~/.zshrc
 sudo apt-get install locales locales-all
 ```
 
+.zshrc中配置LANG LANGUAGE
+
 # thefuck
 
 ```sh
@@ -53,3 +55,12 @@ sudo apt install python3-dev python3-pip
 sudo pip3 install thefuck
 ```
 
+.zshrc配置别名
+
+# autojump
+
+```sh
+sudo apt install autojump
+```
+
+.zshrc中配置插件

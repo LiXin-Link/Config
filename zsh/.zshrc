@@ -72,6 +72,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
+	autojump
 	zsh-autosuggestions
 	history-substring-search
 	# 保证高亮是最后一个插件
