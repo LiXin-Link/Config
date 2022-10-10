@@ -112,3 +112,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
 # 设置中文支持
 export LANG="zh_CN.UTF-8"
 export LANGUAGE="zh_CN.UTF-8" 
+
+# 设置thefuck别名
+eval "$(thefuck --alias fuck)"

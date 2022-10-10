@@ -1,11 +1,13 @@
-0. 安装zsh和git
+# 安装zsh和git
 
 ```
 sudo apt-get install git zsh
 ```
 
-https://github.com/abhigenie92/zsh_to_fish
 # zsh_to_fish
+
+https://github.com/abhigenie92/zsh_to_fish
+
 How to make zsh like fish?
 
 
@@ -38,9 +40,16 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
 source ~/.zshrc
 ```
 
-6. 中文支持
+# 中文支持
 
 ```sh
 sudo apt-get install locales locales-all
+```
+
+# thefuck
+
+```sh
+sudo apt install python3-dev python3-pip
+sudo pip3 install thefuck
 ```
 
