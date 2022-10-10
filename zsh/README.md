@@ -4,6 +4,10 @@
 sudo apt-get install git zsh
 ```
 
+# 环境变量
+
+之前的环境变量都是配置在`/etc/profile`中，如果使用zsh，环境变量需要配置在`/etc/zsh/zprofile`中
+
 # zsh_to_fish
 
 https://github.com/abhigenie92/zsh_to_fish
