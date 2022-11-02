@@ -4,6 +4,12 @@
 sudo apt-get install git zsh
 ```
 
+# 安装 ohmyzsh
+
+```
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 # 环境变量
 
 之前的环境变量都是配置在`/etc/profile`中，如果使用zsh，环境变量需要配置在`/etc/zsh/zprofile`中
