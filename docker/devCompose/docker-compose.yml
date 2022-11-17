@@ -35,3 +35,16 @@ services:
         max-file: "3"
     # restart: always
     command: [ "redis-server", "/etc/redis/redis.conf" ]
+  mongo:
+    image: mongo:${MONGO_VERSION}
+    container_name: mongo_${MONGO_VERSION}
+    ports:
+      - ${REAL_MONGO_PORT}:27017
+    volumes:
+     - ${MONGO_DIR}/db:/data/db # 挂载数据目录
+     - ${MONGO_DIR}/log:/var/log/mongodb  # 挂载日志目录
+     - ${MONGO_DIR}/config:/etc/mongo  # 挂载配置目录
+    environment:
+      TZ: Asia/Shanghai
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
