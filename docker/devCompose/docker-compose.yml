@@ -48,3 +48,13 @@ services:
       TZ: Asia/Shanghai
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
+  oracle:
+    image: gvenzl/oracle-xe:21
+    container_name: oracle-xe_${ORACLE_VERSION}
+    ports:
+      - ${ORACLE_PORT}:1521
+    volumes:
+      - ${ORACLE_DIR}/oradata:/opt/oracle/oradata
+    environment:
+      TZ: Asia/Shanghai
+      ORACLE_PASSWORD: ${ORACLE_PASSWORD}
